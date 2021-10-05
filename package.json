@@ -3,13 +3,61 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@date-io/core": "^2.11.0",
+    "@date-io/date-fns": "^2.11.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/codemod": "^4.5.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@mui/material": "^5.0.2",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@testing-library/react": "^12.1.1",
+    "@testing-library/user-event": "^13.2.1",
+    "apexcharts": "^3.28.3",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.22.0",
+    "babel-polyfill": "^6.26.0",
+    "clsx": "^1.1.1",
+    "cross-fetch": "^3.1.4",
+    "css-vars-ponyfill": "^2.4.7",
+    "date-fns": "^2.24.0",
+    "echarts": "^5.2.1",
+    "echarts-for-react": "^3.0.1",
+    "firebase": "^9.1.1",
+    "formik": "^2.2.9",
+    "globalize": "^1.7.0",
+    "lodash": "^4.17.21",
+    "mui-datatables": "^3.7.8",
+    "node-sass": "^6.0.1",
+    "notistack": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "qwest": "^4.5.0",
     "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-big-calendar": "^0.36.1",
     "react-dom": "^17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-highlight": "^0.14.0",
+    "react-html-parser": "^2.0.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-material-ui-form-validator": "^3.0.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-quill": "^1.3.5",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-vis": "^1.11.7",
+    "recharts": "^2.1.4",
+    "shortid": "^2.2.16",
+    "swiper": "^7.0.7",
+    "uuid": "^8.3.2",
+    "victory": "^36.0.1",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +71,12 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +88,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/styles": "^4.11.4",
+    "customize-cra": "^1.0.0",
+    "react-redux": "^7.2.5"
   }
 }
