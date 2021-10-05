@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react'
+
+import { Router, Switch, BrowserRouter } from 'react-router-dom'
+import AppContext from '../src/app/contexts/AppContext'
+
+import { GlobalCss, MatxSuspense, MatxTheme, MatxLayout } from '../src/app/components'
+import { SettingsProvider } from './app/contexts/SettingsContext'
+import Route from '../src/routes/route'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+          <SettingsProvider>
+            <MatxTheme>
+              <GlobalCss />
+                <BrowserRouter>
+                    <Route/>
+                </BrowserRouter>
+            </MatxTheme>
+          </SettingsProvider>
+
+
+  )
 }
 
-export default App;
+export default App
